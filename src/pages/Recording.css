@@ -1,0 +1,23 @@
+.centeredTitle{
+    text-align: center;
+    margin-left: 15px;
+}
+
+.IoonPositioner{
+   position: absolute;
+   left: 45%;
+   top: 45%;
+}
+
+
+.buttonPositioner{
+   position: absolute;
+   left: 37%;
+   top: 50%;
+   font-weight: bold;
+}
+
+.ionsizer{
+    font-size: 64px;
+    color: blue;
+}
