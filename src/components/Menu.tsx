@@ -3,24 +3,25 @@ import { IonMenu, IonHeader, IonTitle, IonToolbar, IonContent, IonList, IonItem,
 
 
 export const MenuExample: React.FC = () => (
-    <>
-      <IonMenu side="start" content-id="main-page">
-        <IonHeader>
-          <IonToolbar color="primary">
-            <IonTitle>Start Menu</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <IonContent>
-          <IonList>
-            <IonItem routerLink="/recording">M'enregistrer</IonItem>
-            <IonItem>Mes enregistrements</IonItem>
-            <IonItem>Mes statistiques</IonItem>
-            <IonItem>Mon profil</IonItem>
-            <IonItem>En savoir plus</IonItem>
-            <IonItem><IonButton>Déconnexion</IonButton></IonItem>
-          </IonList>
-        </IonContent>
-      </IonMenu>
-      <IonRouterOutlet></IonRouterOutlet>
-      </>
-);
+  <>
+  <IonMenu side="start" >
+    <IonHeader>
+      <IonToolbar color="primary">
+        <IonTitle>Start Menu</IonTitle>
+      </IonToolbar>
+    </IonHeader>
+    <IonContent>
+      <IonList>
+        <IonItem routerLink="/recording">M'enregistrer</IonItem>
+        <IonItem>Mes enregistrements</IonItem>
+        <IonItem>Mes statistiques</IonItem>
+        <IonItem>Mon profil</IonItem>
+        <IonItem>En savoir plus</IonItem>
+        <IonItem><IonButton>Déconnexion</IonButton></IonItem>
+      </IonList>
+    </IonContent>
+  </IonMenu>
+  <IonRouterOutlet content-id="main-page">
+
+  </IonRouterOutlet>
+</>);

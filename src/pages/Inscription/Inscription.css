@@ -1,0 +1,14 @@
+.loginbutton{
+    margin-left: 15%;
+    text-align: center;
+    border: none;
+    padding: 15px 80px;
+    text-decoration: none;
+    display: inline-block;
+    width: 72%;
+    height: 60px;
+}
+
+.contenu{
+    --padding-top: 30px;
+}

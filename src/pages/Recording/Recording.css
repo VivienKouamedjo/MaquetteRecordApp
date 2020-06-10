@@ -1,0 +1,51 @@
+.centeredTitle{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.buttonPositioner{
+   position: absolute;
+   left: 37%;
+   top: 52%;
+   font-weight: bold;
+   text-decoration: none;
+   display: inline-block;
+}
+
+.ionsizer{
+    font-size: 64px;
+    color: blue;
+}
+
+.iconRecord{
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    margin-top: 45%;
+    margin-left: 38%;
+}
+
+.boutonListe{
+    position: absolute;
+    font-size: 10px;
+    margin-top: 95%;
+    margin-left: 20%;
+}
+
+.actionDescription{
+    display: inline-block;
+    position: absolute;
+   margin-left: 8%;
+    top: 15%;
+    font-size: 24px ;
+    font-weight: bold;
+}
+
+.loadingIcon{
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    margin-left: 40%;
+    top: 8%;
+}

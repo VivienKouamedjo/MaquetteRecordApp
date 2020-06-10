@@ -1,8 +1,8 @@
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from "@ionic/react";
 import React from "react";
-import './Listrecord.css';
+import './About.css';
 
-const Listrecord: React.FC = () => {
+const About: React.FC = () => {
 
 
 
@@ -11,7 +11,7 @@ const Listrecord: React.FC = () => {
             <IonHeader>
                 <IonToolbar>
                     <IonTitle>
-                        <p className="centeredTitle">Liste des enregistrements</p>
+                        <p className="centeredTitle">Renseignements</p>
                     </IonTitle>
                 </IonToolbar>
             </IonHeader>
@@ -25,4 +25,4 @@ const Listrecord: React.FC = () => {
 
 };
 
-export default Listrecord;
+export default About;

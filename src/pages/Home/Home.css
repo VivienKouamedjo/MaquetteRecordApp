@@ -1,0 +1,55 @@
+.form{
+    margin-top: 150px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+
+}
+
+.centeredLabel{
+    text-align: center;
+}
+
+.content{
+    --background: url("../../services/fond_appli.png") center center no-repeat;
+    text-align: center;
+}
+
+.loginbuttonAcc{
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+    padding: 15px 80px;
+    text-decoration: none;
+    display: inline-block;
+    width: 72%;
+    height: 60px;
+    
+}
+
+
+
+.input{
+    background-color: #f6f6f6;
+    border: none;
+    color: #535353;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 5px;
+    width: 85%;
+    border: 2px solid #f6f6f6;
+    transition: all 0.5s ease-in-out;
+    height: 35px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    
+}
+
+.centeredTitle{
+    text-align: center;
+}

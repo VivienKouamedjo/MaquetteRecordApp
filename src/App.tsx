@@ -2,7 +2,7 @@ import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -22,19 +22,26 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import Recording from './pages/Recording';
-import Listrecord from './pages/Listrecord';
-import Statistiques from './pages/Statistiques';
+import Recording from './pages/Recording/Recording';
+import Listrecord from './pages/Listrecord/Listrecord';
+import Statistiques from './pages/Statistiques/Statistiques';
+import About from './pages/About/About';
+import Inscription from './pages/Inscription/Inscription';
+import ListShower from './pages/Listrecord/Listshower';
+import Profil from './pages/Profil/profil';
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
         <Route path="/home" component={Home} exact={true} />
+        <Route path="/inscription" component={Inscription} exact={true} />
         <Route exact path="/" render={() => <Redirect to="/home" />} />
         <Route path="/recording" component={Recording} />
-        <Route path="/listrecord" component={Listrecord} />
+        <Route path="/listrecord" component={ListShower} />
         <Route path="/statistiques" component={Statistiques} />
+        <Route path="/about" component={About} />
+        <Route path="/profil" component={Profil} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
