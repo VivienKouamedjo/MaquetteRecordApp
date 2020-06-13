@@ -1,34 +1,39 @@
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonList, IonItem, IonLabel, IonIcon, IonText } from "@ionic/react";
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonList, IonItem, IonLabel, IonIcon, IonText, IonButtons, IonMenuButton } from "@ionic/react";
 import React, { useContext } from "react";
 import './Listrecord.css';
-import {RecordProvider, RecordContext} from '../../components/RecordProvider';
-import Record from '../../components/Record';
-import recordType from "../../model/recordType";
+import {RecordContext} from '../../components/RecordProvider';
 import { playOutline, shareSocialOutline } from "ionicons/icons";
 const Listrecord: React.FC = () => {
 
     const value = useContext(RecordContext);
-
+    console.log(value);
     return(
         <IonPage id="main-page">
             <IonHeader>
                 <IonToolbar>
+                <IonButtons slot="start">
+                        <IonMenuButton />
+                </IonButtons>
                     <IonTitle>
                         <p className="centeredTitle">Liste des enregistrements</p>
                     </IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent>
-              {/*<IonButton routerLink="/statistiques">stats</IonButton> */}
-              {value.map(record =>(
+              <IonList>
+              {value.map((record,index) => {
+                return(
                 <IonItem key={record.id}>
-                <IonLabel>{record.name}</IonLabel>
-                <IonIcon icon={playOutline}></IonIcon>
-                <IonIcon icon={shareSocialOutline}></IonIcon>
-                <IonText>{record.duration}</IonText>
-            </IonItem>
-              )
-              )}  
+                    <IonLabel>{record.name}</IonLabel>
+                    <IonIcon icon={playOutline}></IonIcon>
+                    <IonButton><IonIcon icon={shareSocialOutline}></IonIcon></IonButton>
+                    <IonText>{record.duration}</IonText>
+                </IonItem>
+                );
+              }
+              ) 
+              }
+              </IonList>
             </IonContent>
         </IonPage>
        

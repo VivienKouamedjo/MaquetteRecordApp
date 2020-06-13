@@ -44,7 +44,7 @@ const Inscription: React.FC = () => {
   
                     <IonLabel><p className="centeredLabel">Mot de passe</p></IonLabel>
                     <IonInput ref={passInputRef} type="password"  className="input" required></IonInput>
-                    <IonButton className="loginbutton" type="submit" routerLink="/recording" color="tertiary"><IonIcon icon={checkmarkOutline}></IonIcon></IonButton>    
+                    <IonButton className="loginbutton" type="submit" routerLink="" color="tertiary"><IonIcon icon={checkmarkOutline}></IonIcon></IonButton>    
                 </form>
 
             </IonContent>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { IonPage, IonHeader, IonTitle, IonContent, IonToolbar, IonButtons, IonButton, IonIcon, IonText, IonMenuButton } from '@ionic/react';
 import { discOutline, ellipsisHorizontalOutline, headsetOutline } from 'ionicons/icons';
-import { MenuExample } from '../../components/Menu';
 import './Recording.css';
 
 const Recording: React.FC = () => {
@@ -14,10 +13,9 @@ const Recording: React.FC = () => {
         <IonPage id="main-page">
             <IonHeader>
                 <IonToolbar>
-                <IonButtons slot="start">
-                <IonMenuButton></IonMenuButton>
-                    <MenuExample/>
-                </IonButtons>
+                    <IonButtons slot="start">
+                        <IonMenuButton />
+                    </IonButtons>
                     <IonTitle>
                         <p className="centeredTitle">Enregistrement vocal</p>
                     </IonTitle>

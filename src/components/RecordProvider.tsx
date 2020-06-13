@@ -6,10 +6,10 @@ import Listrecord from "../pages/Listrecord/Listrecord";
 export const RecordContext = createContext<recordType[]>(
     [
         {
-            name: 'Enregistement 1',
-            filepath: 'fdff',
-            duration: '00:26:52',
-            id: 1
+            name: '',
+            filepath: '',
+            duration: '',
+            id: 0
         }
     ]
    

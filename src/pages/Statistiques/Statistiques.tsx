@@ -1,4 +1,4 @@
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonText, IonImg } from "@ionic/react";
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonText, IonImg, IonButtons, IonMenuButton } from "@ionic/react";
 import React from "react";
 import './Statistiques.css';
 
@@ -10,6 +10,9 @@ const Statistiques: React.FC = () => {
         <IonPage id="main-page">
             <IonHeader>
                 <IonToolbar>
+                <IonButtons slot="start">
+                        <IonMenuButton />
+                </IonButtons>
                     <IonTitle>
                         <p className="centeredTitle">Statistiques</p>
                     </IonTitle>

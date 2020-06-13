@@ -1,27 +1,79 @@
-import React from "react";
-import { IonMenu, IonHeader, IonTitle, IonToolbar, IonContent, IonList, IonItem, IonButton, IonRouterOutlet } from "@ionic/react";
+import {
+  IonContent,
+  IonIcon,
+  IonItem,
+  IonLabel,
+  IonList,
+  IonMenu,
+  IonMenuToggle
+} from '@ionic/react';
+
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+import { personOutline, bookOutline, pulseOutline, headsetOutline, discOutline, settingsOutline } from 'ionicons/icons';
+import './Menu.css';
+
+interface AppPage {
+  url: string;
+  iosIcon: string;
+  title: string;
+}
+
+const appPages: AppPage[] = [
+  {
+    title: 'Profil',
+    url: '/profil',
+    iosIcon: personOutline
+  },
+  {
+    title: 'M\'enregistrer ',
+    url: '/recording',
+    iosIcon: discOutline,
+  },
+  {
+    title: 'Mes enregistrements',
+    url: '/listrecord',
+    iosIcon: headsetOutline,
+  },
+  {
+    title: 'Mes statistiques',
+    url: '/statistiques',
+    iosIcon: pulseOutline
+  },
+  {
+    title: 'En savoir plus',
+    url: '/about',
+    iosIcon: bookOutline,
+  },
+  {
+    title: 'Déconnexion',
+    url: '/',
+    iosIcon: settingsOutline ,
+  }
+];
 
 
-export const MenuExample: React.FC = () => (
-  <>
-  <IonMenu side="start" >
-    <IonHeader>
-      <IonToolbar color="primary">
-        <IonTitle>Start Menu</IonTitle>
-      </IonToolbar>
-    </IonHeader>
-    <IonContent>
-      <IonList>
-        <IonItem routerLink="/recording">M'enregistrer</IonItem>
-        <IonItem>Mes enregistrements</IonItem>
-        <IonItem>Mes statistiques</IonItem>
-        <IonItem>Mon profil</IonItem>
-        <IonItem>En savoir plus</IonItem>
-        <IonItem><IonButton>Déconnexion</IonButton></IonItem>
-      </IonList>
-    </IonContent>
-  </IonMenu>
-  <IonRouterOutlet content-id="main-page">
+const Menu: React.FC = () => {
+  const location = useLocation();
 
-  </IonRouterOutlet>
-</>);
+  return (
+    <IonMenu contentId="main" type="overlay">
+      <IonContent>
+        <IonList id="record-list">
+          {appPages.map((appPage, index) => {
+            return (
+              <IonMenuToggle key={index} autoHide={false}>
+                <IonItem className={location.pathname === appPage.url ? 'selected' : ''} routerLink={appPage.url} routerDirection="none" lines="none" detail={false}>
+                  <IonIcon slot="start" icon={appPage.iosIcon} />
+                  <IonLabel>{appPage.title}</IonLabel>
+                </IonItem>
+              </IonMenuToggle>
+            );
+          })}
+        </IonList>
+      </IonContent>
+    </IonMenu>
+  );
+};
+
+export default Menu;
