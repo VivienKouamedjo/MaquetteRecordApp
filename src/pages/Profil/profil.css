@@ -1,5 +1,6 @@
 .infos{
     font-weight: bold;
+    font-size: 15px;
 }
 
 h2{
@@ -12,7 +13,7 @@ h2{
 .boutons ion-button{
     margin-bottom: 19px;
     font-size: 14px;
-    border-radius: 6px;
+    border-radius: 10px;
     height: 58px;
     text-align: center;
 }
@@ -46,5 +47,8 @@ h2{
 .contentProfil{
     margin-left: 20%;
     line-height: 25px;
-    font-size: 15px;
+}
+
+.contentProfil ion-label{
+    font-size: 16px;
 }

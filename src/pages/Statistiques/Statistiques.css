@@ -11,13 +11,18 @@
 }
 
 
-.coleremoji img {
-   width: 120px;
-   height: auto;
+.coleremoji {
+   width: 60px;
+   height: 60px;
+   background: url("../../services/colere.png") center center no-repeat;
+   background-size: contain;
+   margin-left: 39%;
 }
+
 
 .recordingNumber, .VerifiedNumber{
     font-size: 16px;
     color: #000000;
 }
+
 

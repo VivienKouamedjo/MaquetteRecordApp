@@ -29,6 +29,7 @@ import Inscription from './pages/Inscription/Inscription';
 import Profil from './pages/Profil/profil';
 import Menu from './components/Menu';
 import Listrecord from './pages/Listrecord/Listrecord';
+import Accueil from './pages/Accueil/Accueil';
 
 const App: React.FC = () => (
   <IonApp>
@@ -36,6 +37,7 @@ const App: React.FC = () => (
         <IonSplitPane contentId="main">
         <Menu />
         <IonRouterOutlet id="main">
+          <Route path="/Accueil" component={Accueil} exact={true} />
           <Route path="/home" component={Home} exact={true} />
           <Route path="/inscription" component={Inscription} exact={true} />
           <Route exact path="/" render={() => <Redirect to="/home" />} />

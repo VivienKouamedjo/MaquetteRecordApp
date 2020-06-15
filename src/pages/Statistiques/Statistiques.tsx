@@ -1,4 +1,4 @@
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonText, IonImg, IonButtons, IonMenuButton } from "@ionic/react";
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonGrid, IonRow, IonCol, IonText, IonButtons, IonMenuButton } from "@ionic/react";
 import React from "react";
 import './Statistiques.css';
 
@@ -42,7 +42,6 @@ const Statistiques: React.FC = () => {
                 
                 <div id="emojiList">
                     <div className="coleremoji">
-                        <IonImg src="../../../public/assets/colere.pngcolere.png" alt="colereEmoji"></IonImg>
                         <p>Colère</p>
                     </div>
                     {/* Icon integration problems */}

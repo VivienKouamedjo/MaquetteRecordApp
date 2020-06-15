@@ -36,7 +36,7 @@ const Recording: React.FC = () => {
                 </IonButton>
 
             <div className="listEnregistrementPositioner">
-                <IonButton routerLink="/listrecord" className="boutonListe" color="tertiary">
+                <IonButton routerLink="/listrecord" className="boutonListe" hidden color="tertiary">
                     <IonIcon slot="start" icon={headsetOutline}></IonIcon>
                     Ecouter mes enregistrements
                 </IonButton>

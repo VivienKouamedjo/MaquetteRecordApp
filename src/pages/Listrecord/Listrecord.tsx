@@ -24,7 +24,7 @@ const Listrecord: React.FC = () => {
                 <IonListHeader>
                     <IonRow>
                         <IonCol>Enregistrements</IonCol>
-                        <IonCol>Durée</IonCol>
+                        <IonCol className="textDuree">Durée</IonCol>
                     </IonRow>
                 </IonListHeader>
               {value.map((record,_index) => {

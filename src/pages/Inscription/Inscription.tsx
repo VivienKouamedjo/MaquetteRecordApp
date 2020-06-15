@@ -37,9 +37,9 @@ const Inscription: React.FC = () => {
                     <IonLabel><p className="centeredLabel">Pays d'origine</p></IonLabel>
       
                     <IonInput ref={countryRef} placeholder="France" className="input" type="text" required></IonInput>
-                    <IonLabel><p className="centeredLabel">Mail</p></IonLabel>
+                    <IonLabel><p className="centeredLabel">Pseudo</p></IonLabel>
       
-                    <IonInput ref={mailInputRef} placeholder="exemple@gmail.com" className="input" type="text" required></IonInput>
+                    <IonInput ref={mailInputRef} placeholder="" className="input" type="text" required></IonInput>
   
   
                     <IonLabel><p className="centeredLabel">Mot de passe</p></IonLabel>
