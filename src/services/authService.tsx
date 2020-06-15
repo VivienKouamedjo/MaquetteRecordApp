@@ -34,7 +34,4 @@ import User from '../model/User';
       }
 
 
-export default authService;
-
-
 

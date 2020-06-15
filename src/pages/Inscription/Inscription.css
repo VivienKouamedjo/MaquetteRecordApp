@@ -7,8 +7,9 @@
     display: inline-block;
     width: 72%;
     height: 60px;
+    margin-bottom: 10%;
 }
 
-.contenu{
-    --padding-top: 30px;
+ion-content{
+    --padding-top: 10%;
 }

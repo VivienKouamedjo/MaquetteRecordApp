@@ -10,15 +10,10 @@
     color: black;
 }
 
-#emojiList div{
-    width: 45px;
-    height: 45px;
-}
 
-.joiemoji{
-    position: absolute;
-    left: 60px;
-    top: 349px;
+.coleremoji img {
+   width: 120px;
+   height: auto;
 }
 
 .recordingNumber, .VerifiedNumber{
@@ -26,6 +21,3 @@
     color: #000000;
 }
 
-.contentStat{
-    --color: #E5E5E5;
-}

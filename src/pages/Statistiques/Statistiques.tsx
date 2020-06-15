@@ -24,7 +24,7 @@ const Statistiques: React.FC = () => {
                         <IonCol>
                             <div className="recordingNumber">
                                 <span>{/* context on the recording array size to use there*/} </span>
-                                <p >enregistrements réalisés</p>
+                                <p>enregistrements réalisés</p>
                             </div> 
                         </IonCol>
                         <IonCol>
@@ -42,7 +42,8 @@ const Statistiques: React.FC = () => {
                 
                 <div id="emojiList">
                     <div className="coleremoji">
-                        <IonImg src="../services/bonheur.png" alt="bonheur"></IonImg>
+                        <IonImg src="../../../public/assets/colere.pngcolere.png" alt="colereEmoji"></IonImg>
+                        <p>Colère</p>
                     </div>
                     {/* Icon integration problems */}
                     <div className="tristessemoji"></div>

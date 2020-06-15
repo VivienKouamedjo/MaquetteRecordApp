@@ -6,9 +6,9 @@ import Listrecord from "../pages/Listrecord/Listrecord";
 export const RecordContext = createContext<recordType[]>(
     [
         {
-            name: '',
-            filepath: '',
-            duration: '',
+            name: 'Enregistement 1',
+            filepath: 'fdff',
+            duration: '00:26:52',
             id: 0
         }
     ]
@@ -18,7 +18,7 @@ export const RecordContext = createContext<recordType[]>(
 export const RecordProvider: React.FC = (props) => {
 
     {/* JUST CREATE FAKE RECORD FOR THE PRINTING ON SCREEN*/}
-    const Records : Array<recordType> = [
+    const Records : recordType[] = [
         {
             name: 'Enregistement 1',
             filepath: 'fdff',

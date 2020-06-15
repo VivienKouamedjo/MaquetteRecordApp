@@ -1,4 +1,4 @@
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonList, IonItem, IonLabel, IonIcon, IonText, IonButtons, IonMenuButton } from "@ionic/react";
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonList, IonItem, IonLabel, IonIcon, IonText, IonButtons, IonMenuButton, IonListHeader, IonRow, IonCol } from "@ionic/react";
 import React, { useContext } from "react";
 import './Listrecord.css';
 import {RecordContext} from '../../components/RecordProvider';
@@ -21,12 +21,18 @@ const Listrecord: React.FC = () => {
             </IonHeader>
             <IonContent>
               <IonList>
-              {value.map((record,index) => {
+                <IonListHeader>
+                    <IonRow>
+                        <IonCol>Enregistrements</IonCol>
+                        <IonCol>Durée</IonCol>
+                    </IonRow>
+                </IonListHeader>
+              {value.map((record,_index) => {
                 return(
                 <IonItem key={record.id}>
                     <IonLabel>{record.name}</IonLabel>
                     <IonIcon icon={playOutline}></IonIcon>
-                    <IonButton><IonIcon icon={shareSocialOutline}></IonIcon></IonButton>
+                    <IonButton fill="clear"><IonIcon icon={shareSocialOutline} slot="icon-only"></IonIcon></IonButton>
                     <IonText>{record.duration}</IonText>
                 </IonItem>
                 );

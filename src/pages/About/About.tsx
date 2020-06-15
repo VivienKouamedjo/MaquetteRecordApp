@@ -18,8 +18,23 @@ const About: React.FC = () => {
                     </IonTitle>
                 </IonToolbar>
             </IonHeader>
-            <IonContent>
-            
+            <IonContent className="ion-padding">
+                <h1>Qui sommes-nous ?</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
+                    Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. 
+                    Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                </p>
+                <h1>Qu’est ce que la reconnaissance automatique des émotions dans la voix ?</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, 
+                    dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+                </p>
+                <h1>
+                Qu’est-ce qu’une I.A et comment ça fonctionne ?
+                </h1>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse
+                </p>
             </IonContent>
         </IonPage>
        

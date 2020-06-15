@@ -26,9 +26,9 @@ import Recording from './pages/Recording/Recording';
 import Statistiques from './pages/Statistiques/Statistiques';
 import About from './pages/About/About';
 import Inscription from './pages/Inscription/Inscription';
-import ListShower from './pages/Listrecord/Listshower';
 import Profil from './pages/Profil/profil';
 import Menu from './components/Menu';
+import Listrecord from './pages/Listrecord/Listrecord';
 
 const App: React.FC = () => (
   <IonApp>
@@ -40,7 +40,7 @@ const App: React.FC = () => (
           <Route path="/inscription" component={Inscription} exact={true} />
           <Route exact path="/" render={() => <Redirect to="/home" />} />
           <Route path="/recording" component={Recording} />
-          <Route path="/listrecord" component={ListShower} />
+          <Route path="/listrecord" component={Listrecord} />
           <Route path="/statistiques" component={Statistiques} />
           <Route path="/about" component={About} />
           <Route path="/profil" component={Profil} />

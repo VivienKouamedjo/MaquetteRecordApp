@@ -1,8 +1,6 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonGrid, IonItem, IonRow, IonInput, IonCol, IonLabel, IonIcon, IonRouterLink } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonInput,IonLabel, IonIcon, IonRouterLink } from '@ionic/react';
 import React, { useRef, FormEvent } from 'react';
 import './Home.css';
-import { Link, Route, Router } from 'react-router-dom';
-import { login } from '../../services/authService';
 import { checkmarkOutline } from 'ionicons/icons';
 
 const Home: React.FC = () => {
@@ -49,7 +47,6 @@ const Home: React.FC = () => {
       <p className="versInsText">Créez-en un maintenant <IonRouterLink color="primary" href="/inscription">Cliquez-ici</IonRouterLink></p>
         
           <IonButton className="loginbuttonAcc" type="submit" routerLink="/recording" color="tertiary"><IonIcon icon={checkmarkOutline}></IonIcon></IonButton>
-          <IonButton  routerLink="/profil" color="tertiary"><IonIcon icon={checkmarkOutline}></IonIcon></IonButton>
     </form>
       </fieldset>
         
