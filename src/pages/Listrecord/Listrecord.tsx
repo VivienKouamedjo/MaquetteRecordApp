@@ -1,12 +1,10 @@
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonList, IonItem, IonLabel, IonIcon, IonText, IonButtons, IonMenuButton, IonListHeader, IonRow, IonCol } from "@ionic/react";
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import './Listrecord.css';
-import {RecordContext} from '../../components/RecordProvider';
 import { playOutline, shareSocialOutline } from "ionicons/icons";
-const Listrecord: React.FC = () => {
 
-    const value = useContext(RecordContext);
-    console.log(value);
+const Listrecord: React.FC<{tab: Array<String>}>= props => {
+
     return(
         <IonPage id="main-page">
             <IonHeader>
@@ -20,6 +18,7 @@ const Listrecord: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent>
+            {/*
               <IonList>
                 <IonListHeader>
                     <IonRow>
@@ -27,19 +26,18 @@ const Listrecord: React.FC = () => {
                         <IonCol className="textDuree">Durée</IonCol>
                     </IonRow>
                 </IonListHeader>
-              {value.map((record,_index) => {
+            
+              {props.tab.map((record,_index) => {
                 return(
-                <IonItem key={record.id}>
-                    <IonLabel>{record.name}</IonLabel>
-                    <IonIcon icon={playOutline}></IonIcon>
-                    <IonButton fill="clear"><IonIcon icon={shareSocialOutline} slot="icon-only"></IonIcon></IonButton>
-                    <IonText>{record.duration}</IonText>
+                <IonItem>
+                    <IonLabel>{record}</IonLabel>
                 </IonItem>
                 );
               }
               ) 
               }
               </IonList>
+            */}
             </IonContent>
         </IonPage>
        

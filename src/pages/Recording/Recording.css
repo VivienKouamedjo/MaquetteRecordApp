@@ -1,3 +1,8 @@
+.contentRecording{
+    --background: #E5E5E5;
+}
+
+
 .centeredTitle{
     text-align: center;
     font-weight: bold;
